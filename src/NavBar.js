@@ -40,11 +40,11 @@ backdrop-filter: blur(2px);
 `
 
 const MenuItems = styled.div`
-font-family: 'Caveat';
+font-family: 'Righteous';
 height:45px;
 font-style: normal;
 font-weight: 700;
-font-size: 28px;
+font-size: 22px;
 line-height: 30px;
 text-align: center;
 background-color:#A7D373;
