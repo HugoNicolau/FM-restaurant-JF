@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import MainScreen from './MainScreen';
+import GlobalStyle from './GlobalStyle';
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import NavBar from "./NavBar"
+import Food from "./Food"
+import Drinks from "./Drinks"
+import Candies from "./Candies"
+import Party from "./Party"
+import Cart from "./Cart"
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <BrowserRouter>
+
+    <GlobalStyle/>
+    <NavBar/>
+    <Routes>
+    <Route path="/" element={<MainScreen/>} />
+    <Route path="/food" element={<Food/>} />
+    <Route path="/drinks" element={<Drinks/>} />
+    <Route path="/candies" element={<Candies/>} />
+    <Route path="/party" element={<Party/>} />
+    <Route path="/Cart" element={<Cart/>} />
+
+
+    </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
