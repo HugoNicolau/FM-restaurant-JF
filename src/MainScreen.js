@@ -26,7 +26,7 @@ export default function MainScreen() {
       </SelectOption>
      
       <SelectOption>
-        <img src={bolo} alt="bolo" />
+        <img src={salgadinho} alt="bolo" />
         <h2>FESTAS</h2>
       </SelectOption>
       

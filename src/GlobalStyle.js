@@ -45,7 +45,7 @@ table {
 	border-spacing: 0;
 }
 body{
-    background-color:#A7D373;
+    background-color:#ecf8de;
 }
 * {
     box-sizing:border-box;
