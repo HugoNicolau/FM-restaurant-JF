@@ -8,6 +8,7 @@ import Drinks from "./Drinks"
 import Candies from "./Candies"
 import Party from "./Party"
 import Cart from "./Cart"
+import ChooseFood from "./ChooseFood"
 
 
 export default function App() {
@@ -19,11 +20,12 @@ export default function App() {
     <NavBar/>
     <Routes>
     <Route path="/" element={<MainScreen/>} />
-    <Route path="/food" element={<Food/>} />
+    <Route path="/food/" element={<Food/>} />
+    <Route path="/food/:idFood" element={<ChooseFood/>} />
     <Route path="/drinks" element={<Drinks/>} />
     <Route path="/candies" element={<Candies/>} />
     <Route path="/party" element={<Party/>} />
-    <Route path="/Cart" element={<Cart/>} />
+    <Route path="/cart" element={<Cart/>} />
 
 
     </Routes>

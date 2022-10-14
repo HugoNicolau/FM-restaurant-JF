@@ -1,9 +1,8 @@
 import almoco from "./img/almoco.jpg";
-import bolo from "./img/bolo.webp";
+import kitfesta from "./img/kitfesta.png"
 import brigadeiro from "./img/brigadeiro.jpg";
 import refri from "./img/refri.jpg";
-import salgadinho from "./img/salgadinho.webp";
-
+import {Link} from "react-router-dom"
 import styled from "styled-components";
 import { TIPOSDEPEDIDOS } from "./mock";
 
@@ -13,8 +12,10 @@ export default function MainScreen() {
     <IntroText>
       <h1>ESCOLHA SUA OPÇÃO</h1>
       <SelectOption>
+        <Link to={"/food"}>
         <img src={almoco} alt="almoco" />
         <h2>ALMOÇO</h2>
+        </Link>
       </SelectOption>
       <SelectOption>
         <img src={refri} alt="refri" />
@@ -26,7 +27,7 @@ export default function MainScreen() {
       </SelectOption>
      
       <SelectOption>
-        <img src={salgadinho} alt="bolo" />
+        <img src={kitfesta} alt="bolo" />
         <h2>FESTAS</h2>
       </SelectOption>
       
@@ -75,7 +76,7 @@ const SelectOption = styled.div`
     width: 265px;
 
     border-radius: 40px;
-    opacity: 0.8;
+    opacity: 0.7;
   }
   h2 {
     position: absolute;
@@ -89,3 +90,4 @@ const SelectOption = styled.div`
     color: #ffffff;
   }
 `;
+
