@@ -24,11 +24,39 @@ const ACOMPANHAMENTOS = [
   "Salpicão",
 ];
 
-const TIPOSDEPRATOS = [{nome:"Meia refeição", preco:13.50, info:"5 acompanhamentos e 1 opção de carne"},
-{nome:"Refeição normal", preco:15.00, info:"3 acompanhamentos e 1 opção de carne"},
-{nome:"Refeição normal + 1 acompanhamento", preco:16.00, info:"4 acompanhamentos e 1 opção de carne"},
-{nome:"Refeição normal + 2 acompanhamentos", preco:17.00, info:"5 acompanhamentos e 1 opção de carne"},
-{nome:"Refeição normal + 3 acompanhamentos", preco:18.00, info:"6 acompanhamentos e 1 opção de carne"},
-{nome:"Pedido personalizado", preco:11.00, info:"5 acompanhamentos e 1 opção de carne"}]
+const TIPOSDEPRATOS = [
+  {
+    nome: "Meia refeição",
+    preco: 13.5,
+    info: "5 acompanhamentos e 1 opção de carne",
+  },
+  {
+    nome: "Refeição normal",
+    preco: 15.0,
+    info: "3 acompanhamentos e 1 opção de carne",
+  },
+  // {
+  //   nome: "Refeição normal + 1 acompanhamento",
+  //   preco: 16.0,
+  //   info: "4 acompanhamentos e 1 opção de carne",
+  // },
+  // {
+  //   nome: "Refeição normal + 2 acompanhamentos",
+  //   preco: 17.0,
+  //   info: "5 acompanhamentos e 1 opção de carne",
+  // },
+  // {
+  //   nome: "Refeição normal + 3 acompanhamentos",
+  //   preco: 18.0,
+  //   info: "6 acompanhamentos e 1 opção de carne",
+  // },
+  {
+    nome: "Pedido personalizado",
+    preco: 11.0,
+    info: "1 Real a mais por acompanhamento e 3 Reais por opção de carne",
+  },
+];
 
-export {CARNES, ACOMPANHAMENTOS, TIPOSDEPRATOS};
+const TIPOSDEPEDIDOS = ["Comida", "Bebida", "Doce", "Festa"];
+
+export { CARNES, ACOMPANHAMENTOS, TIPOSDEPRATOS, TIPOSDEPEDIDOS };
