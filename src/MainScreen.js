@@ -4,7 +4,6 @@ import brigadeiro from "./img/brigadeiro.jpg";
 import refri from "./img/refri.jpg";
 import {Link} from "react-router-dom"
 import styled from "styled-components";
-import { TIPOSDEPEDIDOS } from "./mock";
 
 export default function MainScreen() {
   // const textIntro = ["Olá, bem vindo(a) ao nosso restaurante, clique acima e escolha a opção desejada e, assim que fizer o pedido, o site te redirecionará com o pedido escolhido para o nosso whatsapp 😄"]
