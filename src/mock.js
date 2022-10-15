@@ -35,24 +35,9 @@ const TIPOSDEPRATOS = [
     preco: 15.0,
     info: "3 acompanhamentos e 1 opção de carne",
   },
-  // {
-  //   nome: "Refeição normal + 1 acompanhamento",
-  //   preco: 16.0,
-  //   info: "4 acompanhamentos e 1 opção de carne",
-  // },
-  // {
-  //   nome: "Refeição normal + 2 acompanhamentos",
-  //   preco: 17.0,
-  //   info: "5 acompanhamentos e 1 opção de carne",
-  // },
-  // {
-  //   nome: "Refeição normal + 3 acompanhamentos",
-  //   preco: 18.0,
-  //   info: "6 acompanhamentos e 1 opção de carne",
-  // },
   {
     nome: "Pedido personalizado",
-    preco: 11.0,
+    preco: 9.0,
     info: "1 Real a mais por acompanhamento e 3 Reais por opção de carne",
   },
 ];
