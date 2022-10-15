@@ -57,6 +57,16 @@ export default function ChooseFood() {
     }
   }
 
+  function addToCart(){
+    let choosedLunchOption = TIPOSDEPRATOS[params.idFood].nome
+
+
+    const cartItem = {tipo:{choosedLunchOption}}
+
+    console.log(cartItem)
+
+  }
+
   let totalPrice = TIPOSDEPRATOS[params.idFood].preco
     .toFixed(2)
     .replace(".", ",");
@@ -123,7 +133,7 @@ export default function ChooseFood() {
           </ButtonFoodStuff>
         ))}
         <br />
-        <ButtonFinishOrder>
+        <ButtonFinishOrder onClick={()=> addToCart()}>
           Adicionar ao carrinho{" "}
           <TotalPriceText>R$ {customPrice} </TotalPriceText>
         </ButtonFinishOrder>
