@@ -1,12 +1,15 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 
 export default function NavBar(){
 
     return(
+      <Link to={"/"}>
       <AllNavBar>
         <h1>FM</h1>
         <h2>Confeitaria & Restaurante</h2>
       </AllNavBar>
+      </Link>
     )
 }
 

@@ -88,5 +88,7 @@ const SelectOption = styled.div`
     letter-spacing: 0em;
     color: #ffffff;
   }
+  border:none;
+  box-shadow:none;
 `;
 

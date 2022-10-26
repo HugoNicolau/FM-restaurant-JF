@@ -60,12 +60,29 @@ export default function ChooseFood() {
   function addToCart(){
     let choosedLunchOption = TIPOSDEPRATOS[params.idFood].nome
 
+    const acpArr =[]
+    const meatAtt=[]
 
-    const cartItem = {tipo:{choosedLunchOption}}
+    ACOMPANHAMENTOS.map((a,i) => (
+      selectedFoodStuff.includes(i) && acpArr.push(a)
+    ))
+    CARNES.map((a,i) => (
+      selectedMeat.includes(i) && acpArr.push(a)
+    ))
+    
+    const cartItem = {tipo:{choosedLunchOption}, carne:{meatAtt}, acompanhamentos:{acpArr}}
+    console.log(cartItem,"Itens no carrinho e tipo de prato")
+  }
+
+  function addToCartCustom(){
+    let choosedLunchOption = TIPOSDEPRATOS[params.idFood].nome
+
+    const cartItem = {tipo:{choosedLunchOption}, carne:{customMeat}, acompanhamentos:{customFood}}
 
     console.log(cartItem)
 
   }
+
 
   let totalPrice = TIPOSDEPRATOS[params.idFood].preco
     .toFixed(2)
@@ -95,7 +112,7 @@ export default function ChooseFood() {
           </ButtonFoodStuff>
         ))}
         <br />
-        <ButtonFinishOrder>
+        <ButtonFinishOrder onClick={addToCart}>
           Adicionar ao carrinho{" "}
           <TotalPriceText>R$ {totalPrice} </TotalPriceText>
         </ButtonFinishOrder>
@@ -133,7 +150,7 @@ export default function ChooseFood() {
           </ButtonFoodStuff>
         ))}
         <br />
-        <ButtonFinishOrder onClick={()=> addToCart()}>
+        <ButtonFinishOrder onClick={addToCartCustom}>
           Adicionar ao carrinho{" "}
           <TotalPriceText>R$ {customPrice} </TotalPriceText>
         </ButtonFinishOrder>
@@ -207,7 +224,7 @@ const TotalPriceText = styled.h5`
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   color: yellow;
   display: flex;
   align-items: center;
