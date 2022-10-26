@@ -77,10 +77,18 @@ export default function ChooseFood() {
   function addToCartCustom(){
     let choosedLunchOption = TIPOSDEPRATOS[params.idFood].nome
 
-    const cartItem = {tipo:{choosedLunchOption}, carne:{customMeat}, acompanhamentos:{customFood}}
+    const acpArr =[]
+    const meatAtt=[]
 
-    console.log(cartItem)
-
+    ACOMPANHAMENTOS.map((a,i) => (
+      customFood.includes(i) && acpArr.push(a)
+    ))
+    CARNES.map((a,i) => (
+      customMeat.includes(i) && acpArr.push(a)
+    ))
+    
+    const cartItem = {tipo:{choosedLunchOption}, carne:{meatAtt}, acompanhamentos:{acpArr}}
+    console.log(cartItem,"Itens no carrinho e tipo de prato")
   }
 
 
