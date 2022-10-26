@@ -112,6 +112,9 @@ const ButtonDivs = styled.div`
       display:flex;
       justify-content: space-between;
       align-items:center;
+      &:hover{
+        cursor:pointer;
+      }
 
 
 `
@@ -125,4 +128,8 @@ const ButtonConfirm = styled.div`
   align-items:center;
   justify-content:center;
   width:100%;
+
+  &:hover{
+    cursor:pointer
+  }
 `
