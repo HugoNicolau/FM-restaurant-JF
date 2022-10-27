@@ -9,9 +9,12 @@ import Candies from "./Candies"
 import Party from "./Party"
 import Cart from "./Cart"
 import ChooseFood from "./ChooseFood"
+import { useState } from 'react';
 
 
 export default function App() {
+  const [cartItems, setCartItems] = useState([])
+
   return (
     
     <BrowserRouter>

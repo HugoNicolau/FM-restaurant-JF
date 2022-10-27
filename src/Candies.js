@@ -4,6 +4,6 @@
 export default function Candies(){
 
     return(
-        <>OI</>
+        <>Pegar a receita de candies</>
     )
 }
